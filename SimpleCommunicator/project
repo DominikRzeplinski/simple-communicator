@@ -1,0 +1,10 @@
+Napisać dwa programy, które komunikują się ze sobą za pomocą łączy:
+
+        program łącze1 łącze2
+
+Każdy z programów otwiera łącza lub tworzy je, jeśli nie istnieją.
+Procesy odczytują wiadomości z terminala (standardowe wejście stdin)
+oraz z łącza. Wiadomości odczytane z terminala przesyłane są przez łącze
+do drugiego procesu. Wiadomości odczytane z łącza są wyświetlane na
+terminalu (standardowe wyjście stdout). Zalecane jest wykorzystanie
+funkcji select().
