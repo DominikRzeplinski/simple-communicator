@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Dominik
-Date                   :=30/10/19
+Date                   :=03/11/19
 CodeLitePath           :=/home/dominik/.codelite
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -39,8 +39,8 @@ LinkOptions            :=
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch)./headers/ 
 IncludePCH             := 
 RcIncludePath          := 
-Libs                   := 
-ArLibs                 :=  
+Libs                   := $(LibrarySwitch)pthread 
+ArLibs                 :=  "pthread" 
 LibPath                := $(LibraryPathSwitch). 
 
 ##
@@ -50,8 +50,8 @@ LibPath                := $(LibraryPathSwitch).
 AR       := /usr/bin/ar rcu
 CXX      := /usr/bin/g++
 CC       := /usr/bin/gcc
-CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
-CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+CXXFLAGS :=  -g -O0 -Wall  $(Preprocessors)
+CFLAGS   :=  -g -O0 -Wall   $(Preprocessors)
 ASFLAGS  := 
 AS       := /usr/bin/as
 
